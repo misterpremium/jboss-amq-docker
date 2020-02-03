@@ -17,10 +17,10 @@ COPY ./etc/s2i/bin/install-common.sh /usr/local/sbin/install-common.sh
 COPY ./etc/s2i/bin/run /usr/local/sbin/run
 COPY ./etc/s2i/bin/save-artifacts /usr/local/sbin/save-artifacts
 
-# Expose port 8181
-EXPOSE 8181
+# Expose port 8161
+EXPOSE 8161
 
 # Expose port 61616
-EXPOSE 61616
 
+EXPOSE 5672 5671 1883 8883 61613 61612 61616 61617
 CMD ["/opt/amq/bin/launch.sh"]
