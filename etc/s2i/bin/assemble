@@ -1,6 +1,6 @@
 #!/bin/bash
 #CUSTOM SCRIPTS VASS
-
+mv /opt/amq/conf/activemq.xml_ /opt/amq/conf/activemq.xml
 excec /usr/local/s2i/assemble
 
 rc=$?

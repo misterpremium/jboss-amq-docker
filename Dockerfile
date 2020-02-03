@@ -2,13 +2,7 @@
 FROM  registry.access.redhat.com/jboss-amq-6/amq63-openshift:1.4
 
 # Software versions being used inside the builder
-ENV jboss-eap=7.1
-
-#Database drivers configurations & Custom folders for datasources & && change permissions
-# Create custom folders a
-RUN mkdir -p /opt/amq
-
-
+ENV active-mq=6.3
 
 #Custom assemble script
 COPY ./etc/s2i/bin/assemble /usr/local/sbin/assemble
